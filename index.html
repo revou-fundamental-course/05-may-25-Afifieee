@@ -2,85 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yama Travel Agent</title>
-
-    <!-- CSS External -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afifie Travel Agent</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <!-- Main Header -->
-    <header class="main-header">
-        <!-- Logo -->
-        <div class="main-logo"></div>
+  <!-- Main Header -->
+  <header class="main-header">
+    <!-- Navigation -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#our-package">Our Package</a>
+      <a href="#call-us">Call Us</a>
+    </nav>
+  </header>
 
-        <!-- Navigation -->
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#our-package">Our Package</a>
-            <a href="#call-us">Call Us</a>
-        </nav>
-    </header>
+  <hr />
 
-    <hr />
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <header>
+        <h1><strong>Your Trusted</strong> Travel Agent's</h1>
+      </header>
+      <p class="subtitle">Your happiness is our hapiness</p>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Content -->
-        <section id="home">
-            <header>
-                <h1>Your Trusted Travel Agent's</h1>
-            </header>
-
-            <h4>Your Happiness is our Happiness</h4>
-
-            <!-- Banner & Form Content -->
-            <div class="banner-form">
-                <div class="banner-img"></div>
-
-                <form></form>
+      <div class="banner-form">
+        <!-- Left Side: Image & Testimonial -->
+        <div class="banner-left">
+          <div class="banner-img"></div>
+          <div class="testimonial">
+            <p class="quote">"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+            <div class="testimonial-info">
+              <img src="assets/Ballerina.jpg" alt="Profile" class="profile-pic" />
+              <div>
+                <strong>Ballerina Capuccina</strong><br />
+                <span>Ibu Rumah Tangga, 28</span>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <hr />
+        <!-- Right Side: Contact Form -->
+        <div class="form-box">
+          <h3>Contact Us</h3>
+          <p class="note">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+          <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="First and last name" required />
 
-        <!-- Our Package Content -->
-        <section id="our-package">
-            <header>
-                <h1>Our Package</h1>
-            </header>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="example@email.com" required />
 
-            <!-- Our Package Content -->
-            <div class="sub-content">
-                <p>Lorem Ipsum Dolor Sit Amet</p>
-            </div>
-        </section>
+            <label for="interest">What are you interested in?</label>
+            <select id="interest" required>
+              <option value="">Select option</option>
+              <option value="bali">Trip to Bali</option>
+              <option value="bandung">Trip to Bandung</option>
+              <option value="bandung">Trip to Surabaya</option>
+              <option value="bandung">Trip to Japan</option>
+              <option value="bandung">Trip to Singapore</option>
+              <option value="bandung">Third Feature</option>
+            </select>
 
-        <hr />
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
 
-        <!-- Call Us Content -->
-        <section id="call-us">
-            <header>
-                <h1>Call Us</h1>
-            </header>
+      <!-- Info Feature Section -->
+        <p class="section-info">
+          Use this space to provide users with more information about your offer.
+          Consider it a follow-up to your headline and explain the benefits of your service or product
+        </p>
 
-            <!-- Call Us Content -->
-            <div class="sub-content">
-                <p>Lorem Ipsum Dolor Sit Amet</p>
-            </div>
-        </section>
-    </main>
+        
+          <div class="feature">
+            <div class="circle">1</div>
+            <p>Your first feature, written in the form of a benefit statement.</p>
+          </div>
+          <div class="feature">
+            <div class="circle">2</div>
+            <p>Your second feature, written in the form of a benefit statement.</p>
+          </div>
+          <div class="feature">
+            <div class="circle">3</div>
+            <p>Your third feature, written in the form of a benefit statement.</p>
+          </div>
+      
+    </section>
 
-    <hr />
+    <!-- Our Package Section -->
+    <section id="our-package">
+      <h2>Our Package</h2>
+      <div class="packages">
+        <div class="package"><strong>Bali</strong><p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</p></div>
+        <div class="package"><strong>Japan</strong><p>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</p></div>
+        <div class="package"><strong>Singapore</strong><p>This description supports and extends the bullet point above.</p></div>
+        <div class="package"><strong>Bandung</strong><p>This description supports and extends the bullet point above.</p></div>
+        <div class="package"><strong>Surabaya</strong><p>This description supports and extends the bullet point above.</p></div>
+        <div class="package"><strong>Third Feature</strong><p>This description supports and extends the bullet point above.</p></div>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <span>
-            &copy; 2025 Yama Travel Agent. All rights reserved.
-        </span>
-    </footer>
+    <!-- Call Us Section -->
+    <section id="call-us">
+      <h2>Your Closing Argument Headline</h2>
+      <p>Suspensidse egestas rhoncus urna in bibendum. Donec urna neque, euismod sed justo quis, convallis tincidunt risus.</p>
+      <button class="cta">CALL TO ACTION</button>
+    </section>
+  </main>
+
+  <hr />
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; 2025 Afifie Travel Agent. All rights reserved.</span>
+  </footer>
+
+  <!-- External JS -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
